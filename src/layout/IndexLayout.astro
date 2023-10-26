@@ -1,6 +1,23 @@
 ---
-
+import '../main.css'
 ---
+<script>
+	import { myColor } from '../utils/colors.ts';
+
+	document.body.style.backgroundColor = myColor;
+
+	// Récupére toutes les class text-myColor pour attiruber myColor sur les textes
+	const txt = document.getElementsByClassName('text-myColor') as HTMLCollectionOf<HTMLElement>;
+	Array.from(txt).forEach(element => {
+		element.style.color = myColor;
+	});
+
+	// Récupére toutes les class bg-myColor pour attiruber myColor sur les background
+	const bg = document.getElementsByClassName('bg-myColor') as HTMLCollectionOf<HTMLElement>;
+	Array.from(bg).forEach(element => {
+		element.style.backgroundColor = myColor;
+	});
+</script>
 
 <html lang="fr">
 	<head>
@@ -8,9 +25,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Neals</title>
 	</head>
-	<body class="container">
-		<slot />
+	<body id="body">
+		<main>
+			<slot myColor={myColor} />
+		</main>
 	</body>
 </html>
