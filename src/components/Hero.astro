@@ -1,16 +1,27 @@
-<section>
-    <div class="container">
-        .N.
+---
+import Marquee from "./Marquee.astro";
+import Wings from "./Wings.astro";
+
+---
+
+<section class="h-screen relative">
+    <div class="container z-50">
+        <div class="w-16 mb-6 md:w-24"><Wings /></div>
         <h1>
-            Neals ~ <span class="text-myColor">studio de création graphique et développement informatique</span> - print / web
+            Neals ~ <span class="text-myColor">studio de création graphique et développement web</span> ~ print / web
         </h1>
         <p>
             Je suis Directeur Artistique et Développeur FullStack freelance passionné et expérimenté.
             Je propose des designs uniques et adaptés pour des projets web et print, ainsi que des développements performants et élégants.
             Je travaille en étroite collaboration avec mes clients pour répondre à leurs besoins et respecter les délais impartis.
+            <!-- <span class="text-myColor">N'hésitez pas à me contacter pour discuter de votre projet.</span> -->
         </p>
-        <a href="mailto:hello@neals.fr" class="text-myColor">
-            N'hésitez pas à me contacter pour discuter de votre projet.
-        </a>
+        <h6 class="text-myColor">N'hésitez pas à me contacter pour discuter de votre projet.</h6>
+        
+        <aside class="flex items-center gap-x-1 mt-6">
+            <a href="mailto:hello@neals.fr" class="bg-myColor">hello</a>
+            <a href="mailto:hello@neals.fr" class="bg-myColor">linkedin</a>
+            <a href="mailto:hello@neals.fr" class="bg-myColor">behance</a>
+        </aside>
     </div>
 </section>

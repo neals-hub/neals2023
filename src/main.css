@@ -31,7 +31,7 @@ body {
     font-Crimson
     /* bg-sky-400 */
     text-slate-100
-    p-5
+    p-3
 
     md:p-10
 }
@@ -47,7 +47,6 @@ main {
 section {
     @apply
     w-full
-    h-screen
 
     p-10
 
@@ -60,37 +59,106 @@ section {
 
 h1 {
     @apply
-    text-2xl
+    text-lg
     uppercase
-    font-bold
-    leading-7
+    font-extrabold
+    leading-6
 
-    md:text-3xl
+    md:text-xl
+    md:leading-7
 }
 h2 {
     @apply
-    text-2xl
-    uppercase
-    font-bold
-
-    md:text-3xl
-}
-
-p {
-    @apply
     font-Raleway
-    text-base
-    my-4
-    
+    text-lg
+    uppercase
+    font-extrabold
+    pb-8
 
     md:text-xl
-    md:leading-10
 }
-
-a {
+h6 {
     @apply
     font-Raleway
     text-xs
 
     md:text-base
 }
+
+p {
+    @apply
+    font-Raleway
+    text-sm
+    my-4
+    leading-6
+
+    md:text-2xl
+    md:leading-[2.5rem]
+}
+
+a {
+    @apply
+    font-Raleway
+    text-xs
+    font-bold
+
+    px-3
+    py-1
+    text-slate-900
+
+    md:text-base
+
+    hover:text-white
+    
+}
+
+/* GRID CLIENTS */
+.gridClients {
+    @apply
+    flex
+    flex-wrap
+    justify-start
+    
+    w-full
+    gap-5
+
+    sm:gap-10
+}
+.gridClients > img {
+    @apply
+    w-10
+    h-10
+
+    sm:w-16
+    sm:h-16
+
+}
+
+/* PHOTO DE ME */
+.me {
+    background-image: url('neals2023/images/me-BlackWhite.jpg');
+    @apply
+    bg-cover
+    rounded-full
+    w-32
+    h-32
+    mb-4
+
+    md:w-56
+    md:h-56
+}
+
+/* MY VIDEO BACKGOUNRD */
+/* video {
+    @apply
+    absolute
+    top-0
+    left-0
+
+    object-cover
+    w-screen
+    h-screen
+
+    mix-blend-multiply
+    -z-50
+} */

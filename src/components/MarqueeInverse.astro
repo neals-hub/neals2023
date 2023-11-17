@@ -1,0 +1,86 @@
+<div class="marquee">
+    <div class="animMarquee">
+        <ul>
+            <li>Création site web</li>
+            <li>Développement</li>
+            <li>Frontend</li>
+            <li>Logo</li>
+            <li>Backend</li>
+            <li>Fullstack</li>
+            <li>Freelance</li>
+            <li>Print</li>
+            <li>Artistique</li>
+            <li>Graphisme</li>
+            <li>Print</li>
+            <li>Event</li>
+            <li>Mini-site</li>
+        </ul>
+        <ul>
+            <li>Création site web</li>
+            <li>Développement</li>
+            <li>Frontend</li>
+            <li>Logo</li>
+            <li>Backend</li>
+            <li>Fullstack</li>
+            <li>Freelance</li>
+            <li>Print</li>
+            <li>Artistique</li>
+            <li>Graphisme</li>
+            <li>Print</li>
+            <li>Event</li>
+            <li>Mini-site</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.marquee {
+    @apply
+    fixed
+    bottom-0
+
+    w-full
+    py-4
+
+    border-t
+    border-b
+    border-black
+
+    bg-slate-200
+
+    overflow-hidden
+    whitespace-nowrap
+}
+.animMarquee {
+    @apply
+    flex
+}
+ul {
+    animation: animInverse 15s infinite linear;
+    @apply
+    list-none
+    flex
+    w-max
+
+}
+li {
+    @apply
+    uppercase
+    font-Raleway
+
+    text-xs
+    font-extrabold
+    pl-8
+
+    md:text-base
+}
+
+@keyframes animInverse {
+    from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+</style>

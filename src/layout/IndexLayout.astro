@@ -1,5 +1,5 @@
 ---
-// import '../main.css'
+import '../main.css'
 ---
 <script>
 	import { myColor } from '../utils/colors.ts';
@@ -17,6 +17,22 @@
 	Array.from(bg).forEach(element => {
 		element.style.backgroundColor = myColor;
 	});
+
+	// Récupére toutes les class border-myColor pour attiruber myColor sur les border
+	const border = document.getElementsByClassName('border-myColor') as HTMLCollectionOf<HTMLElement>;
+	Array.from(border).forEach(element => {
+		element.style.border = '1px solid' + myColor;
+	});
+	const borderBottom = document.getElementsByClassName('borderBottom-myColor') as HTMLCollectionOf<HTMLElement>;
+	Array.from(borderBottom).forEach(element => {
+		element.style.borderBottom = '1px solid' + myColor;
+	});
+
+    // Récupére la class wings pour le logo
+    const wings = document.getElementsByClassName('wings') as HTMLCollectionOf<HTMLElement>;
+    Array.from(wings).forEach(element => {
+        element.style.fill = myColor;
+    });
 </script>
 
 <html lang="fr">
@@ -33,102 +49,3 @@
 		</main>
 	</body>
 </html>
-
-<style is:global>
-@font-face {
-    font-family: 'Crimson';
-    src: url('/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype-variations');
-    font-weight: 1 1000;
-    font-style: normal italic;
-    font-stretch: 100% 200%;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype-variations');
-    font-weight: 1 1000;
-    font-style: normal italic;
-    font-stretch: 100% 200%;
-}
-
-*, ::after, ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    @apply
-    leading-none
-}
-
-body {
-    @apply
-    w-screen
-    h-screen
-    font-Crimson
-    /* bg-sky-400 */
-    text-slate-100
-    p-5
-
-    md:p-10
-}
-
-main {
-    @apply
-    w-full
-    h-full
-    bg-slate-900
-    overflow-scroll
-}
-
-section {
-    @apply
-    w-full
-    h-screen
-
-    p-10
-
-    flex
-    flex-col
-
-    md:items-center
-    md:justify-center
-}
-
-h1 {
-    @apply
-    text-2xl
-    uppercase
-    font-bold
-    leading-7
-
-    md:text-3xl
-}
-h2 {
-    @apply
-    text-2xl
-    uppercase
-    font-bold
-
-    md:text-3xl
-}
-
-p {
-    @apply
-    font-Raleway
-    text-base
-    my-4
-    
-
-    md:text-xl
-    md:leading-10
-}
-
-a {
-    @apply
-    font-Raleway
-    text-xs
-
-    md:text-base
-}
-</style>
