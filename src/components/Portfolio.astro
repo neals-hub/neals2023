@@ -1,5 +1,42 @@
-<section>
+<section id="portfolio">
     <div class="container">
-        <h2 class="text-myColor">Portfolio</h2>
+        <h2>Portfolio</h2>
+        
+        <div class="gridPorfolio">
+            <a class="aPortfolio" href="/neals2023/clients/engie">ENGIE Solutions</a>
+            <a class="aPortfolio" href="">Suez</a>
+            <a class="aPortfolio" href="">APPI</a>
+        </div>
+
     </div>
 </section>
+
+<style>
+.gridPorfolio {
+    @apply
+    flex
+    flex-col
+    w-full
+}
+.aPortfolio {
+    @apply
+    border-t
+    border-slate-700
+    py-4
+
+    text-sm
+    font-Raleway
+    font-bold
+
+    leading-5
+
+    md:text-base
+
+    hover:bg-primary
+    hover:text-slate-900
+    hover:px-2
+
+    transition-all
+    duration-200
+}
+</style>

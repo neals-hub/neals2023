@@ -15,7 +15,10 @@ export default {
 			fontFamily: {
 				'Crimson': ['Crimson', 'serif'],
 				'Raleway': ['Raleway', 'sans-serif']
-			}
+			},
+			colors: {
+				'primary': '#38bdf8' //sky-400
+			},
 		},
 	},
 	plugins: [],
