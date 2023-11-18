@@ -20,6 +20,7 @@
 }
 
 html {
+  height: -webkit-fill-available;
     @apply
     leading-none
 }
@@ -28,6 +29,7 @@ body {
     @apply
     w-screen
     h-screen
+    min-h-screen
     font-Crimson
     bg-primary
     text-slate-100
@@ -175,3 +177,12 @@ p {
     mix-blend-multiply
     -z-50
 } */
+
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      min-height: -webkit-fill-available;
+    }
+  }
