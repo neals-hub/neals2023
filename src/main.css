@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Crimson';
-    src: url('/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype-variations');
+    src: url('/neals2023/fonts/CrimsonPro-VariableFont_wght.ttf') format('truetype-variations');
     font-weight: 1 1000;
     font-style: normal italic;
     font-stretch: 100% 200%;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype-variations');
+    src: url('/neals2023/fonts/Raleway-VariableFont_wght.ttf') format('truetype-variations');
     font-weight: 1 1000;
     font-style: normal italic;
     font-stretch: 100% 200%;
@@ -70,6 +70,10 @@ section {
     md:items-center
     md:justify-center
 }
+.sectionInterne {
+    @apply
+    py-12
+}
 
 .wings {
     @apply
@@ -94,7 +98,15 @@ h2 {
     pb-8
     text-primary
 
-    md:text-sm
+    md:text-base
+}
+h5 {
+    @apply
+    text-sm
+    font-extrabold
+    pb-2
+
+    md:text-lg
 }
 h6 {
     @apply
@@ -105,7 +117,7 @@ h6 {
     md:text-base
 }
 
-p {
+.paragraphIntro {
     @apply
     font-Raleway
     text-sm
@@ -116,28 +128,7 @@ p {
     md:leading-[2.5rem]
 }
 
-.aPrimary {
-    @apply
-    font-Raleway
-    text-xs
-    font-bold
 
-    px-3
-    py-1
-    text-primary
-    bg-slate-900
-    border
-    border-primary
-
-    md:text-base
-
-    hover:text-slate-900
-    hover:bg-primary
-
-    transition-colors
-    duration-200
-    
-}
 
 /* GRID CLIENTS */
 .gridClients {
@@ -162,7 +153,7 @@ p {
 }
 
 /* PHOTO DE ME */
-.me {
+/* .me {
     background-image: url('neals2023/images/me-BlackWhite.jpg');
     @apply
     bg-cover
@@ -173,7 +164,7 @@ p {
 
     md:w-56
     md:h-56
-}
+} */
 
 /* MY VIDEO BACKGOUNRD */
 /* video {

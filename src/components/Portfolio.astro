@@ -1,12 +1,17 @@
-<section id="portfolio">
+---
+import SlideShow from './SlideShow.astro'
+---
+
+<section class="sectionInterne">
     <div class="container">
         <h2>Portfolio</h2>
         
-        <div class="gridPorfolio">
-            <a class="aPortfolio" href="/neals2023/clients/engie">ENGIE Solutions</a>
-            <a class="aPortfolio" href="">Suez</a>
-            <a class="aPortfolio" href="">APPI</a>
-        </div>
+        <ul class="gridPorfolio">
+            <li><img src="/neals2023/refs/engie/01.jpg" alt=""></li>
+            <li><img src="/neals2023/refs/engie/02.jpg" alt=""></li>
+            <li><img src="/neals2023/refs/engie/03.jpg" alt=""></li>
+            <li><img src="/neals2023/refs/engie/04.jpg" alt=""></li>
+        </ul>
 
     </div>
 </section>
@@ -15,28 +20,28 @@
 .gridPorfolio {
     @apply
     flex
-    flex-col
+    flex-wrap
     w-full
+    gap-5
 }
-.aPortfolio {
+li {
     @apply
-    border-t
-    border-slate-700
-    py-4
+    overflow-hidden
+    h-32
+    w-32
+    border-primary
+    border-0
+    cursor-pointer
 
-    text-sm
-    font-Raleway
-    font-bold
-
-    leading-5
-
-    md:text-base
-
-    hover:bg-primary
-    hover:text-slate-900
-    hover:px-2
+    hover:border-8
 
     transition-all
     duration-200
+}
+img {
+    @apply
+    object-cover
+    w-full
+    h-full
 }
 </style>

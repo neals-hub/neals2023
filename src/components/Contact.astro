@@ -1,9 +1,32 @@
-<section class="h-screen bg-primary">
-    <div class="container">
-         <img src="/neals2023/images/me.jpg" class="rounded-full w-16" alt="">
-        <h4 class="p-2 bg-slate-900 w-fit">Neals</h4>
-        <h4 class="p-2 bg-slate-900 w-fit"> ~ Julien EICHLER</h4><br>
-            hello@neals.fr<br>
-            06 66 55 66 26
+---
+import Link from './Link.astro'
+---
+
+<section class="sectionContact">
+    <div class="container z-50">
+        <h5 class="p-2 bg-slate-900 w-fit">Neals ~ <span class="text-primary">Julien EICHLER</span><br>0666556626</h5>
+        <Link />
     </div>
+    <img src="/neals2023/images/me.jpg" class="me" alt="">
 </section>
+
+<style>
+    .sectionContact {
+        @apply
+        relative
+        h-3/4
+        bg-sky-900
+        border-t
+        border-primary
+    }
+.me {
+    @apply
+    absolute
+    top-0
+    left-0
+    object-cover
+    h-full
+    w-full
+    mix-blend-overlay
+}
+</style>

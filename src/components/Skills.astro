@@ -1,5 +1,88 @@
-<section>
+<section class="sectionInterne">
     <div class="container">
-        <h2>Compétences</h2>
+        <!-- <h2>Compétences</h2> -->
+            <ul class="ulSkills">
+                <li class="listSkills">
+                    <h4>Design Print/web</h4>
+                    <ul>
+                        <li><img src="/neals2023/skills/adobe-photoshop.svg" alt="" class="thumbnailSkills">Photoshop</li>
+                        <li><img src="/neals2023/skills/Adobe_Illustrator_CC_icon.svg" alt="" class="thumbnailSkills">Illustrator</li>
+                        <li><img src="/neals2023/skills/Adobe Indesign CC.svg" alt="" class="thumbnailSkills">Indesign</li>
+                        <li><img src="/neals2023/skills/Adobe-XD-CC.svg" alt="" class="thumbnailSkills">XD</li>
+                        <li><img src="/neals2023/skills/Figma.svg" alt="" class="thumbnailSkills">Figma</li>
+                        <li><img src="/neals2023/skills/Tailwind.svg" alt="" class="thumbnailSkills">Tailwind</li>
+                    </ul>
+                </li>
+                <li class="listSkills">
+                    <h4>Front-end</h4>
+                    <ul>
+                        <li><img src="/neals2023/skills/typescript.svg" alt="" class="thumbnailSkills">Typescript</li>
+                        <li><img src="/neals2023/skills/react.svg" alt="" class="thumbnailSkills">React</li>
+                        <li><img src="/neals2023/skills/vue.svg" alt="" class="thumbnailSkills">Vue</li>
+                        <li><img src="/neals2023/skills/svelte.svg" alt="" class="thumbnailSkills">Svelte</li>
+                        <li><img src="/neals2023/skills/astro.svg" alt="" class="thumbnailSkills">Astro</li>
+                    </ul>
+                </li>
+                <li class="listSkills">
+                    <h4>Back-end</h4>
+                    <ul>
+                        <li><img src="/neals2023/skills/node.svg" alt="" class="thumbnailSkills">Node</li>
+                        <li><img src="/neals2023/skills/firebase.svg" alt="" class="thumbnailSkills">Firebase</li>
+                        <li><img src="/neals2023/skills/supabase.svg" alt="" class="thumbnailSkills">Supabase</li>
+                        <li><img src="/neals2023/skills/docker.svg" alt="" class="thumbnailSkills">Docker</li>
+                    </ul>
+                </li>
+                <li class="listSkills">
+                    <h4>Divers</h4>
+                    <ul>
+                        <li><img src="/neals2023/skills/aws.svg" alt="" class="thumbnailSkills">AWS</li>
+                        <li><img src="/neals2023/skills/vercel.svg" alt="" class="thumbnailSkills">Vercel</li>
+                        <li><img src="/neals2023/skills/git.svg" alt="" class="thumbnailSkills">git & github</li>
+                    </ul>
+                </li>
+
+            </ul>
     </div>
 </section>
+
+<style>
+h4 {
+    @apply
+    text-xs
+    uppercase
+    text-primary
+    font-extrabold
+    pb-2
+
+    md:text-sm
+}
+.ulSkills {
+    @apply
+    grid
+    grid-cols-2
+    gap-4
+
+    md:grid-cols-4
+}
+.listSkills {
+    @apply
+    font-Raleway
+    pb-2
+    leading-5
+    text-sm
+
+    md:text-base
+    md:leading-7
+}
+.listSkills > ul > li {
+    @apply
+    flex items-center
+    gap-3
+    mb-2
+}
+.thumbnailSkills {
+    @apply
+    w-6
+    h-6
+}
+</style>
