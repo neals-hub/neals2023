@@ -80,6 +80,13 @@ section {
     fill-primary
 }
 
+hr {
+    @apply
+    border-primary
+    border-opacity-50
+    mb-8
+}
+
 h1 {
     @apply
     text-lg
@@ -131,26 +138,7 @@ h6 {
 
 
 /* GRID CLIENTS */
-.gridClients {
-    @apply
-    flex
-    flex-wrap
-    justify-start
-    
-    w-full
-    gap-5
 
-    sm:gap-10
-}
-.gridClients > img {
-    @apply
-    w-10
-    h-10
-
-    sm:w-16
-    sm:h-16
-
-}
 
 /* PHOTO DE ME */
 /* .me {
