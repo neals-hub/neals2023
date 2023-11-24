@@ -2,31 +2,44 @@
 import SlideShow from './SlideShow.astro'
 ---
 
-<section class="sectPortfolio">
+<section class="sectionInterne">
+    <div class="container">
+        <hr>
         <ul class="gridPorfolio">
             <li><img src="/neals2023/refs/engie/01.jpg" alt=""></li>
             <li><img src="/neals2023/refs/engie/02.jpg" alt=""></li>
             <li><img src="/neals2023/refs/engie/03.jpg" alt=""></li>
             <li><img src="/neals2023/refs/engie/04.jpg" alt=""></li>
         </ul>
+    </div>
 </section>
 
 <style>
-    .sectPortfolio {
-        @apply
-        p-0
-        m-0
-    }
 .gridPorfolio {
     @apply
-    grid
-    grid-cols-2
-
-    md:grid-cols-2
+    flex
+    flex-wrap
+    w-full
+    gap-5
 }
 li {
     @apply
-    border-slate-900
-    border
+    overflow-hidden
+    h-32
+    w-32
+    border-primary
+    border-0
+    cursor-pointer
+
+    hover:border-8
+
+    transition-all
+    duration-200
+}
+img {
+    @apply
+    object-cover
+    w-full
+    h-full
 }
 </style>
